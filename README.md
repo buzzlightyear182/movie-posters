@@ -1,9 +1,5 @@
-# Empty ruby project
+# Display Movie Posters
 
-## Developing
+Coding exercise on Ruby and Sinatra
 
-You can use Guard to run tests automatically
-
-```
-guard -i
-```
+Displays 9 movie posters from movie title search from IMDB
