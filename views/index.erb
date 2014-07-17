@@ -1,0 +1,22 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form name="search" action="/results" method="post">
+	     <h1>Movie Posters</h1><br />
+	     <p> Put in the movie title of your choice</p>
+	     <input type="text" size="30" name="movie_title"/>
+    	<input type="submit" id="searchbutton" value="Find it!"/>
+	</form>
+
+	<div class="movielist">
+		<% if @posters != nil %>
+			<% @posters.each do |x| %>
+				<img src=" <%= x %> "
+				<br/>
+			<% end %>
+		<% end %>
+	</div>
+</body>
+</html>
